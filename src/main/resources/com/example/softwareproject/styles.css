@@ -1,0 +1,112 @@
+/* styles.css */
+
+.button-gradient {
+    -fx-background-color: linear-gradient(to bottom, #9B51E0, #FF6B8B); /* Gradient background */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 10px 20px; /* Padding */
+    -fx-background-radius: 20px; /* Rounded corners */
+}
+
+.button-gradient:hover {
+    -fx-background-color: linear-gradient(to bottom, #6A3880, #E64D73); /* Darker hover gradient */
+}
+
+
+.date-picker {
+    -fx-background-color: #9B51E0; /* Background color */
+    -fx-text-fill:black; /* Text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-prompt-text-fill: black; /* Placeholder text color */
+    -fx-background-radius: 10px; /* Rounded corners */
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #9B51E0; /* Arrow button background */
+    -fx-shape: "M2,2 L2,22 L22,12 Z"; /* Arrow shape */
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: #8A48D2; /* Darker hover color for arrow button */
+}
+
+.date-picker-popup {
+    -fx-background-color: #9B51E0; /* Popup background */
+    -fx-border-color: #9B51E0; /* Popup border color */
+
+}
+
+.date-picker-popup .day-cell {
+    -fx-text-fill:black; /* Day cell text color */
+}
+
+.date-picker-popup .day-cell:hover {
+    -fx-background-color: #8A48D2; /* Darker hover color for day cell */
+}
+
+
+.text-field {
+    -fx-background-color: #F0F0F0; /* Background color */
+    -fx-border-color: #9B51E0; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-font-size: 14px; /* Font size */
+    -fx-prompt-text-fill: #9B51E0; /* Placeholder text color */
+    -fx-text-fill: #333333; /* Text color */
+    -fx-padding: 8px; /* Padding */
+
+}
+
+.text-field:focus {
+    -fx-border-color: #6A3880; /* Border color when focused */
+
+}
+
+
+/* styles.css */
+
+.table-view {
+    -fx-background-color: #F0F0F0; /* Background color */
+    -fx-border-color: #9B51E0; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-font-size: 14px; /* Font size */
+    -fx-text-fill: #333333; /* Text color */
+    -fx-padding: 8px; /* Padding */
+
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #9B51E0; /* Column header background color */
+    -fx-background-radius: 5px; /* Column header background radius */
+    -fx-text-fill: white; /* Column header text color */
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: #FFFFFF; /* Row background color */
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: #F0F0F0; /* Alternate row background color */
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: black; /* Selected row background color */
+    -fx-text-fill: #FFFFFF; /* Selected row text color */
+}
+
+/* styles.css */
+.back-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 10;
+    -fx-cursor: hand;
+    -fx-background-image: url("back_button.png"); /* Set the image URL */
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-transition: -fx-background-color 0.3s;
+}
+
+.back-button:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.2); /* Darken background on hover */
+}

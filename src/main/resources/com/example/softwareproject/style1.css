@@ -1,0 +1,73 @@
+/* styles.css */
+.custom-button {
+
+    -fx-background-image: url("gantchart.gif");
+    -fx-background-size: cover;
+    -fx-border-color: white;
+    -fx-border-width: 0;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0.5, 0, 5);
+    -fx-transition: -fx-background-color 0.3s;
+    -fx-border-radius: 100; /* Rounded corner radius */
+}
+
+.custom-button:hover {
+    //-fx-background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay on hover */
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0.5, 0, 5);
+}
+
+
+.custom-button2 {
+    -fx-background-color: transparent;
+    -fx-background-image: url("FPA2.png");
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0.5, 0, 5);
+    -fx-transition: -fx-background-color 0.3s;
+    -fx-border-radius: 100; /* Rounded corner radius */
+}
+
+.custom-button2:hover {
+//-fx-background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay on hover */
+    -fx-background-color: #2980b9;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0.5, 0, 5);
+}
+
+.custom-button3 {
+    -fx-background-color: transparent;
+    -fx-background-image: url("Attendance.gif");
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0.5, 0, 5);
+    -fx-transition: -fx-background-color 0.3s;
+    -fx-border-radius: 100; /* Rounded corner radius */
+}
+
+.custom-button3:hover {
+//-fx-background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay on hover */
+    -fx-background-color: #2980b9;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0.5, 0, 5);
+}
+
+
+/* styles.css */
+.back-button {
+    -fx-background-color: #e74c3c; /* Red background color */
+    -fx-background-radius: 50%; /* Make it circular */
+    -fx-border-color: transparent;
+    -fx-border-radius: 50%; /* Make it circular */
+    -fx-padding: 10;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-transition: -fx-background-color 0.3s;
+    -fx-graphic: "\u2190"; /* Unicode for left arrow */
+}
+
+.back-button:hover {
+    -fx-background-color: #c0392b; /* Darker red on hover */
+}
