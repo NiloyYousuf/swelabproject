@@ -1,19 +1,21 @@
 package com.example.softwareproject;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.util.Date;
-import javax.swing.JFrame;
-
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.data.category.IntervalCategoryDataset;
-import org.jfree.data.gantt.Task;
 import org.jfree.data.gantt.TaskSeries;
 import org.jfree.data.gantt.TaskSeriesCollection;
 
+import javax.swing.*;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.temporal.TemporalAccessor;
+import java.util.Date;
+import org.jfree.data.gantt.Task;
+import java.time.LocalDate;
+import java.util.Date;
 
 public class GanttChartMaker extends JFrame {
 
@@ -36,6 +38,9 @@ public class GanttChartMaker extends JFrame {
         setContentPane(panel);
     }
 
+    private Date convertToLocalDate(LocalDate localDate) {
+        return Date.from(localDate.atStartOfDay().atZone(ZoneId.systemDefault()).toInstant());
+    }
     private IntervalCategoryDataset getCategoryDataset() {
 
         TaskSeries series1 = new TaskSeries("Estimated Date");
@@ -53,8 +58,8 @@ public class GanttChartMaker extends JFrame {
           Instant end_instant= end_date.atStartOfDay(zoneId).toInstant();
 
           series1.add(new Task(TaskUtils.tasks.get(k).getName(),
-                  Date.from(start_instant),
-                  Date.from(end_instant)
+                  Date.from(convertToLocalDate(start_date).toInstant()),
+                  Date.from(convertToLocalDate(end_date).toInstant())
           ));
       }
 
