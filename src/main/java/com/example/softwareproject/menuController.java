@@ -12,7 +12,7 @@ import java.io.IOException;
 public class menuController {
     @FXML
     private void open_gantt_chart(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("tasks.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Gantt_chart_task_selection.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(fxmlLoader.load(), 720, 480);
         stage.setTitle("Gantt Chart Maker");

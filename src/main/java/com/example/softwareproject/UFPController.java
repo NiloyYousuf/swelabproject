@@ -15,7 +15,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class MeasurementParametersController {
+public class UFPController {
 
     @FXML
     private TableView<TaskRow> tableView;
@@ -44,11 +44,6 @@ public class MeasurementParametersController {
             private final String[] MeasurementParameters = {
                     "external inputs (EI)", "external outputs (EO)", "external inquiries (EQ)", "internal files (ILF)", "external interfaces (EIF)"
             };
-                    /*1. external inputs (EI)
-                    2. external outputs (EO)
-                    3. external inquiries (EQ)
-                    4. internal files (ILF)
-                    5. external interfaces (EIF)*/
 
             private final ComboBox<String> comboBox = new ComboBox<>(FXCollections.observableArrayList(MeasurementParameters));
 
@@ -150,6 +145,8 @@ public class MeasurementParametersController {
             tableView.getItems().remove(selectedIndex);
         }
     }
+
+    public  static  double AFP;
     @FXML
     private void calculateUFP(ActionEvent event) {
         int totalTDI = tableView.getItems().stream()
@@ -157,6 +154,9 @@ public class MeasurementParametersController {
                 .sum();
 
         System.out.println("Total UFP: " + totalTDI);
+        AFP=totalTDI*VAFController.VAF;
+        System.out.println(" AFP is : "+AFP);
+
     }
 
     @FXML

@@ -25,6 +25,7 @@ public class VAFController {
     @FXML
     private TableView<FactorRow> tableView;
 
+    public  static double VAF;
     public void initialize() {
         TableColumn<FactorRow, String> factorColumn = new TableColumn<>("Factor");
         factorColumn.setCellValueFactory(new PropertyValueFactory<>("factorName"));
@@ -110,8 +111,8 @@ public class VAFController {
                 .sum();
 
         System.out.println("Total TDI: " + totalTDI);
-        System.out.println("VAF=(TDI*0.01)+0.065 . So VAF=" + (totalTDI * 0.01 + 0.065));
-
+        System.out.println("VAF=(TDI*0.01)+0.065 . So VAF=" + (totalTDI * 0.01 + 0.65));
+        VAF=(totalTDI * 0.01 + 0.65);
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("UFP.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(fxmlLoader.load(), 720, 480);
