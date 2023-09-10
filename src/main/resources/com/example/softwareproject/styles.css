@@ -11,6 +11,32 @@
 .button-gradient:hover {
     -fx-background-color: linear-gradient(to bottom, #6A3880, #E64D73); /* Darker hover gradient */
 }
+/* styles.css */
+/* styles.css */
+.green-gradient-button {
+    -fx-background-color: linear-gradient(to bottom, #00CC00, #009900); /* Gradient background */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 10px 20px; /* Padding */
+    -fx-background-radius: 20px; /* Rounded corners */
+}
+
+.green-gradient-button:hover {
+    fx-background-color: linear-gradient(to bottom,  #00FF00, #00CC00); /* Darker hover gradient */
+}
+
+
+.red-gradient-button {
+    -fx-background-color: linear-gradient(to bottom, #CC0000, #FF0000); /* Gradient background */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 10px 20px; /* Padding */
+    -fx-background-radius: 20px; /* Rounded corners */
+}
+
+.red-gradient-button:hover {
+    fx-background-color: linear-gradient(to bottom,  #FF0000, #990000); /* Darker hover gradient */
+}
 
 
 .date-picker {

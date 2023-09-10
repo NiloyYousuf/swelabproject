@@ -12,7 +12,7 @@ public class EmployeeAttendanceApp extends Application {
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("attendance.fxml"));
         primaryStage.setTitle("Employee Attendance System");
-        primaryStage.setScene(new Scene(root, 800, 600));
+        primaryStage.setScene(new Scene(root, 720, 480));
         primaryStage.show();
     }
 

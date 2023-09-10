@@ -4,6 +4,7 @@ module com.example.softwareproject {
     requires java.desktop;
     requires jfreechart;
     requires java.sql;
+    requires jcommon;
 
 
     opens com.example.softwareproject to javafx.fxml;
